@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
+	<link href='http://fonts.googleapis.com/css?family=Cinzel+Decorative|Voces|Forum' rel='stylesheet' type='text/css'>
 	<meta description="Auditores Tributarios Ltda. La Serena, Chile"/>
 	<title>Auditores Tributarios</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
@@ -35,8 +36,13 @@
 				  	<img src="imagenes/conta04.jpg" alt="">
 				  	<p class="caption">prueba 02</p>
 				  </li>
-				  <li><img src="imagenes/conta03.jpg" alt=""></li>
+				  <li>
+				  	<img src="imagenes/conta03.jpg" alt="">
+				  	<p class="caption">prueba 03</p>
+				  </li>
 				</ul>
+
+
 			</div>
 			<div id="somos">
 				<h2>Somos</h2>
@@ -69,7 +75,7 @@
 	$(document).on("ready", gogogo);
 	function gogogo(){
 			$(".rslides").responsiveSlides({
-				nav:true
+				nav:false
 			});
 
 	        var scrollorama = $.scrollorama({ blocks:'.para_scroll' });
