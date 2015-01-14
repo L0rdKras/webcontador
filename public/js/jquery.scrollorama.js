@@ -64,6 +64,7 @@
 					blocks[i].block
 						.css('position', 'absolute')
 						.css('top', blocks[i].top);
+						//.css('top', '0');
 				}
 			}
 			

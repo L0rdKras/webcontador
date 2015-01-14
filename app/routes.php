@@ -15,3 +15,16 @@ Route::get('/', function()
 {
 	return View::make('pagina/home');
 });
+
+Route::get('/panel', function()
+{
+	return View::make('correos/panel');
+});
+
+Route::post('/login',['as' => 'login', 'uses' => 'AuthController@inicia']);
+
+Route::get('/logout',['as' => 'logout', 'uses' => 'AuthController@salir']);
+
+Route::get('/subir',['as' => 'subir', 'uses' => 'DocumentosController@ver_subir']);
+
+Route::post('/upload',['as' => 'upload', 'uses' => 'DocumentosController@guardar']);
