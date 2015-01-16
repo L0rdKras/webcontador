@@ -9,7 +9,7 @@
           {{--Auth::check()--}}
           @if (Auth::check())
           	<li><a href="{{ route('subir') }}">Subir Archivo</a></li>
-          	<li><a href="">Guardar Direccion Correo</a></li>
+          	<li><a href="{{ route('registrar_correos') }}">Guardar Direccion Correo</a></li>
           	<li><a href="">Crear Mensaje</a></li>
           	<li><a href="">Enviar Mensaje</a></li>
             <li><a href="{{ route('logout') }}">Salir</a></li>

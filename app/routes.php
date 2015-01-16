@@ -28,3 +28,9 @@ Route::get('/logout',['as' => 'logout', 'uses' => 'AuthController@salir']);
 Route::get('/subir',['as' => 'subir', 'uses' => 'DocumentosController@ver_subir']);
 
 Route::post('/upload',['as' => 'upload', 'uses' => 'DocumentosController@guardar']);
+
+Route::get('/registrocorreos',['as' => 'registrar_correos', 'uses' => 'CorreosController@registrar']);
+
+Route::post('/registrocorreos',['as' => 'guarda_correo', 'uses' => 'CorreosController@guardar']);
+
+Route::get('/crearmensaje',['as' => 'crear_mesaje', 'uses' => 'EnvioController@crear']);
